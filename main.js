@@ -16,15 +16,18 @@ const chiudi = document.querySelector(".close");
 MsHamburgerMenu.addEventListener('click',
 
     function ( ) {
-        hamburgerMenuClicked.style.display="block";
+        hamburgerMenuClicked.classList.add("active");
     }
 
 );
 chiudi.addEventListener('click',
 
     function( ) {
-        hamburgerMenuClicked.style.display="none";
+        hamburgerMenuClicked.classList.remove("active");
     }
 
 )
+
+// con l aggiunta di add e remove attivo e rimuovo la classe active 
+
 
